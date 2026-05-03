@@ -18,6 +18,10 @@ Use the attached image as the design to follow exactly.
 Use Shadcn components where available.
 ```
 
+<div style="max-width: 200px;">
+    <img src="./images/1-todoist-landing-page.jpg" alt="Todoist landing page" width="200" />
+</div>
+
 ## Cursor Rules
 
 ### Application architecture Cursor Rule
@@ -99,7 +103,7 @@ When enter the text date I want to be able to use a textual description to set t
 I also want to be able to just add the task title and select a due date manually using the Shadcn Date Picker component.
 ```
 
-## Implementing a Google Stitch Design
+## Implementing a Google Stitch Design
 
 ### Prompt to download the Stitch design
 
