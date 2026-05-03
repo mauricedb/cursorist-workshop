@@ -1,12 +1,14 @@
 # Prompts for the Cursorist workshop
 
-## A very naïve prompt
+## Building a home page
+
+### A very naïve prompt
 
 ```
 Build me a new landing page for a to-do application named Cursorist.
 ```
 
-## A slightly better prompt
+### A slightly better prompt
 
 ```
 Build me a new landing page for a to-do application named Cursorist.
@@ -18,6 +20,8 @@ Use Shadcn components where available.
 
 ## Cursor Rules
 
+### Application architecture Cursor Rule
+
 ```
 /create-rule
 
@@ -26,6 +30,10 @@ I want you to create a rule about the general application architecture to adhere
 Aks me questions and come up with suggestions to decide what the rule file should contain.
 ```
 
+## My Cursor Workflow
+
+### The first prompt
+
 ```
 Create a new page where I can see tasks I need to finish today under the path `/app/today`. Under the path `/app/inbox` I want to see a list of all tasks I need to complete.
 
@@ -33,6 +41,8 @@ I want a menu on the left of the screen to navigate between these views.
 
 Just use a mock data structure for now.
 ```
+
+### Prompt to add details
 
 ```
 On the @app/(tasks)/today/page.tsx route I would like an enhancement:
@@ -44,24 +54,38 @@ On the @app/(tasks)/inbox/page.tsx and @app/(tasks)/today/page.tsx routes I woul
 - Tasks with are not done and supposed to be done today should have their "Due: {date}" in green.
 ```
 
+### Adding a database using Prisma ORM
+
 ```
 Update the Prisma schema to store the tasks in the database. Use the current mock data to seed the database. Make the @app/(tasks)/today/page.tsx and @app/(tasks)/inbox/page.tsx pages use the data from the database instead of the mock data they are using now.
 ```
 
-```
+### Seed and inspect the database using Prisma Studio
+
+```bash
 npx prisma db seed
 npx prisma studio
 ```
 
+### Fixing a bug
+
 ```
 There is a problem with marking a task as done. The task disappears from the list but the database is never updated. When I refresh the page I see the original list of task again while I was expecting not to see the done task.
 ```
+
+## Using 3rd party libraries
+
+### Using Shadcn Checkbox and Label components
 
 ```
 instead of a standard HTML checkbox I want to use the Shadcn Checkbox and Label components.
 
 Make sure to use the best practices @Shadcn
 ```
+
+## Cursor Plan Mode
+
+### Prompt to add new tasks
 
 ```
 I want to be able to add new tasks.
@@ -74,6 +98,10 @@ When enter the text date I want to be able to use a textual description to set t
 
 I also want to be able to just add the task title and select a due date manually using the Shadcn Date Picker component.
 ```
+
+## Implementing a Google Stitch Design
+
+### Prompt to download the Stitch design
 
 ```
 ## Stitch Instructions
@@ -90,6 +118,8 @@ ID: 13452193057897107397
 
 Use a utility like `curl -L` to download the hosted URLs.
 ```
+
+### Implement the Stitch design
 
 ```
 Apply this design to the /today and /inbox routes.
