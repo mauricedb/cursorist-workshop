@@ -55,7 +55,7 @@ On the @app/(tasks)/today/page.tsx route I would like an enhancement:
 On the @app/(tasks)/inbox/page.tsx and @app/(tasks)/today/page.tsx routes I would also like to see a number of enhancements:
 - When a task is past the due date the line with "Due: {date}" should be shown in red.
 - Each item should have a checkbox to mark that task as done.
-- Tasks with are not done and supposed to be done today should have their "Due: {date}" in green.
+- Tasks which are not done and supposed to be done today should have their "Due: {date}" in green.
 ```
 
 ### Adding a database using Prisma ORM
